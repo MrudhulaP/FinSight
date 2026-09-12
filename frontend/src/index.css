@@ -1,0 +1,195 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+/* ============================================================
+   FINSIGHT DESIGN TOKENS
+   Dark is the default surface language; light is a fully
+   separate, equally considered palette — not an inversion.
+   ============================================================ */
+
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-canvas: #090c14;
+  --color-surface: #0e121e;
+  --color-surface-2: #131829;
+  --color-surface-hover: #1a2036;
+
+  --color-border: #1e2537;
+  --color-border-strong: #2a3350;
+
+  --color-ink: #e8eaf1;
+  --color-ink-muted: #9aa3ba;
+  --color-ink-faint: #616c85;
+
+  --color-accent: #7583ff;
+  --color-accent-soft: rgba(117, 131, 255, 0.12);
+  --color-accent-strong: #96a1ff;
+
+  --color-signal: #3fc6e0;
+  --color-signal-soft: rgba(63, 198, 224, 0.12);
+
+  --color-risk-high: #f2555c;
+  --color-risk-high-soft: rgba(242, 85, 92, 0.12);
+  --color-risk-medium: #eba53c;
+  --color-risk-medium-soft: rgba(235, 165, 60, 0.12);
+  --color-risk-low: #35c98e;
+  --color-risk-low-soft: rgba(53, 201, 142, 0.12);
+
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -8px rgba(0, 0, 0, 0.5);
+  --shadow-elevated: 0 4px 16px rgba(0, 0, 0, 0.45), 0 16px 40px -12px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+
+  --color-canvas: #f6f6f3;
+  --color-surface: #ffffff;
+  --color-surface-2: #ffffff;
+  --color-surface-hover: #f0f1f0;
+
+  --color-border: #e4e4e0;
+  --color-border-strong: #d3d3cd;
+
+  --color-ink: #191b22;
+  --color-ink-muted: #5b6070;
+  --color-ink-faint: #8b90a0;
+
+  --color-accent: #4a55d9;
+  --color-accent-soft: rgba(74, 85, 217, 0.08);
+  --color-accent-strong: #3844c9;
+
+  --color-signal: #0f8fab;
+  --color-signal-soft: rgba(15, 143, 171, 0.08);
+
+  --color-risk-high: #d13a41;
+  --color-risk-high-soft: rgba(209, 58, 65, 0.08);
+  --color-risk-medium: #a9700a;
+  --color-risk-medium-soft: rgba(169, 112, 10, 0.08);
+  --color-risk-low: #12805a;
+  --color-risk-low-soft: rgba(18, 128, 90, 0.08);
+
+  --shadow-soft: 0 1px 2px rgba(20, 20, 15, 0.04), 0 8px 24px -10px rgba(20, 20, 15, 0.08);
+  --shadow-elevated: 0 4px 16px rgba(20, 20, 15, 0.06), 0 16px 40px -14px rgba(20, 20, 15, 0.12);
+}
+
+@theme inline {
+  --color-canvas: var(--color-canvas);
+  --color-surface: var(--color-surface);
+  --color-surface-2: var(--color-surface-2);
+  --color-surface-hover: var(--color-surface-hover);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-ink-faint: var(--color-ink-faint);
+  --color-accent: var(--color-accent);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-accent-strong: var(--color-accent-strong);
+  --color-signal: var(--color-signal);
+  --color-signal-soft: var(--color-signal-soft);
+  --color-risk-high: var(--color-risk-high);
+  --color-risk-high-soft: var(--color-risk-high-soft);
+  --color-risk-medium: var(--color-risk-medium);
+  --color-risk-medium-soft: var(--color-risk-medium-soft);
+  --color-risk-low: var(--color-risk-low);
+  --color-risk-low-soft: var(--color-risk-low-soft);
+
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
+
+/* Scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border-strong) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Focus visibility (accessibility) */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Numeric / identifier data uses the mono face — a deliberate
+   "ledger" register for figures and case IDs, not decoration. */
+.font-data {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Shared entrance keyframes used sparingly across pages */
+@keyframes fs-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fs-enter {
+  animation: fs-fade-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
