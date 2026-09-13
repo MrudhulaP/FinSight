@@ -13,7 +13,8 @@ app = FastAPI(title="FinSight API")
 # Allow the frontend (running on a different port during dev) to call this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # fine for a hackathon demo; tighten if you have time
+    allow_origins=["https://finsight.vercel.app"],  # or ["*"] for testing
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
