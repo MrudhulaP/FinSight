@@ -10,8 +10,9 @@ Instead of stopping at anomaly detection, FinSight investigates suspicious finan
 
 ## Live Demo: 
 
-**Frontend:**
+https://fin-sight-lemon.vercel.app/
 
+<img width="1917" height="1026" alt="Screenshot 2026-09-13 173807" src="https://github.com/user-attachments/assets/9d2f7667-192b-461f-b574-adf4586ee18f" />
 
 The live application provides the FinSight financial intelligence interface.
 
@@ -137,6 +138,9 @@ The detection layer provides the initial signal that a transaction requires inve
 
 The investigation engine connects related financial records to build an evidence chain.
 
+<img width="1625" height="1010" alt="image" src="https://github.com/user-attachments/assets/0c4f4e3e-b446-4db4-a045-a8bcdd07861d" />
+
+
 ```text
 Invoice
    ↓
@@ -158,6 +162,9 @@ This is the **core differentiator of the project**.
 ## 3. AI-Powered Investigation
 
 The AI layer takes the structured evidence collected by the investigation engine and produces a human-readable explanation.
+
+<img width="1917" height="1025" alt="Screenshot 2026-09-13 173947" src="https://github.com/user-attachments/assets/d0dc9678-128d-4b6c-b586-c5e1fe5f3035" />
+
 
 It can help:
 
@@ -561,7 +568,7 @@ Vite will provide the local development URL in the terminal.
 
 ---
 
-# 📡 System Communication
+# System Communication
 
 The frontend communicates with the FastAPI backend to retrieve financial analysis and investigation information.
 
@@ -585,7 +592,7 @@ React Dashboard
 
 ---
 
-# 🔬 Detection & Investigation Logic
+# Detection & Investigation Logic
 
 FinSight combines different financial indicators rather than relying on one signal.
 
