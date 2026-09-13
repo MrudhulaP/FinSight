@@ -745,7 +745,7 @@ Developed collaboratively as part of a hackathon project focused on:
 ### Contributors
 
 * **Mrudhula P**
-* **Dishant Aps**
+* **Dishant Surya Tej**
 * **Vijayalakshmi H S**
 * **Khushi Patil**
 
