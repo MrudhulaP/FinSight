@@ -11,7 +11,7 @@ Instead of stopping at anomaly detection, FinSight investigates suspicious finan
 ## Live Demo: 
 
 **Frontend:**
-https://fin-sight-aurora-x1.vercel.app/
+
 
 The live application provides the FinSight financial intelligence interface.
 
