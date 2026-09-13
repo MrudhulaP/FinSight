@@ -475,7 +475,7 @@ cd FinSight
 
 ---
 
-# 🐍 Backend Setup
+# Backend Setup
 
 Navigate to the backend:
 
@@ -516,12 +516,12 @@ Create a `.env` file inside the backend directory if required by the implementat
 Example:
 
 ```env
-OPENAI_API_KEY=your_api_key_here
+GEMINI_API_KEY=your_api_key_here
 ```
 
 **Never commit your actual API key to GitHub.**
 
-Use `.env.example` to document required environment variables without exposing secrets.
+Use `.env` to document required environment variables without exposing secrets.
 
 ---
 
