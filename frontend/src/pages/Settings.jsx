@@ -17,7 +17,7 @@ import {
 
 import { useTheme } from "../context/ThemeContext";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 
 const NAV_ITEMS = [
   { id: "profile", label: "Profile", icon: User },

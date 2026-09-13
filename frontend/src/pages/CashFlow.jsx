@@ -22,7 +22,7 @@ import {
 
 import { useChartTheme } from "../hooks/useChartTheme";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 
 function formatCurrency(value, compact = false) {
   if (value === null || value === undefined) return "—";

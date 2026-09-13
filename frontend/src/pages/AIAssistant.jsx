@@ -14,7 +14,7 @@ import {
 import { useAnomalies } from "../hooks/useAnomalies";
 import RiskBadge from "../components/RiskBadge";
 
-const API_BASE = import.meta.env.VITE_API_URL;
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
 
 function formatINR(value) {
   return `₹${Number(value || 0).toLocaleString("en-IN", {
