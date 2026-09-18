@@ -12,7 +12,8 @@ Instead of stopping at anomaly detection, FinSight investigates suspicious finan
 
 https://fin-sight-lemon.vercel.app/
 
-<img src="images/dashboard.png" alt="FinSight AI Dashboard" width="900">
+<img width="1901" height="916" alt="Screenshot 2026-09-18 230603" src="https://github.com/user-attachments/assets/6f0bc61b-20ef-4bd1-9763-97d359a249d7" />
+
 
 The live application provides the FinSight financial intelligence interface.
 
@@ -138,7 +139,7 @@ The detection layer provides the initial signal that a transaction requires inve
 
 The investigation engine connects related financial records to build an evidence chain.
 
-<img width="1625" height="1010" alt="image" src="https://github.com/user-attachments/assets/0c4f4e3e-b446-4db4-a045-a8bcdd07861d" />
+<img width="1898" height="902" alt="Screenshot 2026-09-18 230521" src="https://github.com/user-attachments/assets/047f4b42-817f-41ca-8057-214942179817" />
 
 
 ```text
@@ -163,7 +164,7 @@ This is the **core differentiator of the project**.
 
 The AI layer takes the structured evidence collected by the investigation engine and produces a human-readable explanation.
 
-<img width="1917" height="1025" alt="Screenshot 2026-09-13 173947" src="https://github.com/user-attachments/assets/d0dc9678-128d-4b6c-b586-c5e1fe5f3035" />
+<img width="1917" height="912" alt="Screenshot 2026-09-18 230249" src="https://github.com/user-attachments/assets/3c21cb72-ee06-4d8c-a13d-b5b5ed4d7c1c" />
 
 
 It can help:
