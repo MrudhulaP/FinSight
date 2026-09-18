@@ -12,7 +12,7 @@ Instead of stopping at anomaly detection, FinSight investigates suspicious finan
 
 https://fin-sight-lemon.vercel.app/
 
-<img width="1901" height="916" alt="Screenshot 2026-09-18 230603" src="https://github.com/user-attachments/assets/6f0bc61b-20ef-4bd1-9763-97d359a249d7" />
+<img width="1898" height="902" alt="Screenshot 2026-09-18 230521" src="https://github.com/user-attachments/assets/047f4b42-817f-41ca-8057-214942179817" />
 
 
 The live application provides the FinSight financial intelligence interface.
@@ -139,7 +139,7 @@ The detection layer provides the initial signal that a transaction requires inve
 
 The investigation engine connects related financial records to build an evidence chain.
 
-<img width="1898" height="902" alt="Screenshot 2026-09-18 230521" src="https://github.com/user-attachments/assets/047f4b42-817f-41ca-8057-214942179817" />
+<img width="1901" height="916" alt="Screenshot 2026-09-18 230603" src="https://github.com/user-attachments/assets/6f0bc61b-20ef-4bd1-9763-97d359a249d7" />
 
 
 ```text
