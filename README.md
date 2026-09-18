@@ -12,7 +12,7 @@ Instead of stopping at anomaly detection, FinSight investigates suspicious finan
 
 https://fin-sight-lemon.vercel.app/
 
-<img width="1917" height="1026" alt="Screenshot 2026-09-13 173807" src="https://github.com/user-attachments/assets/9d2f7667-192b-461f-b574-adf4586ee18f" />
+<img src="images/dashboard.png" alt="FinSight AI Dashboard" width="900">
 
 The live application provides the FinSight financial intelligence interface.
 
